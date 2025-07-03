@@ -1,6 +1,11 @@
-/* app.css */
+/* ------------------------- */
+/* Importação de fontes      */
+/* ------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900&display=swap');
 
+/* ------------------------- */
+/* Estilos base              */
+/* ------------------------- */
 body {
 	margin: 0;
 	padding: 0;
@@ -9,6 +14,9 @@ body {
 	color: #ffffff;
 }
 
+/* ------------------------- */
+/* Elementos globais         */
+/* ------------------------- */
 a {
 	color: inherit;
 	text-decoration: none;
