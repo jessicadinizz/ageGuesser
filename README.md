@@ -1,16 +1,16 @@
 # 🧠 AgeGuesser
 
 > Descubra a idade estimada de uma pessoa com base no nome, usando uma interface simples e intuitiva feita com **SvelteKit + TypeScript**.
-@@ -11,8 +7,6 @@ Claro! Aqui está um `README.md` completo e bem organizado para seu projeto **Ag
+
+## 📸 Visão Geral
 
 O **AgeGuesser** é um projeto de front-end desenvolvido com **SvelteKit** que consome a API [Agify.io](https://agify.io) para prever a idade de uma pessoa com base no nome fornecido. O objetivo é demonstrar domínio técnico, organização de código, boas práticas com TypeScript e foco na experiência do usuário.
-
-
 
 ## 🚀 Funcionalidades
 
 ### 🎯 Funcionalidade Principal
-@@ -21,7 +15,7 @@ O **AgeGuesser** é um projeto de front-end desenvolvido com **SvelteKit** que c
+- 🔎 Estimar a idade com base no nome digitado (usando [agify.io](https://agify.io)).
+
 ### 🧠 Melhorias Técnicas
 - ✅ Projeto migrado para **TypeScript** (`.ts`, `.svelte` com `lang="ts"`).
 - ✅ Tipagem estática de dados (`PageData`, `PageLoad`, etc.).
@@ -18,20 +18,36 @@ O **AgeGuesser** é um projeto de front-end desenvolvido com **SvelteKit** que c
 - ✅ Utilização de `derived stores` com reatividade do Svelte.
 
 ### 🎨 Melhorias Visuais
-@@ -32,8 +26,6 @@ O **AgeGuesser** é um projeto de front-end desenvolvido com **SvelteKit** que c
+- ✅ Animações de `fade-in` ao exibir os resultados (suave e acessível).
+- ✅ Layout limpo com organização de estilos via `global.css`.
+
+### ♿ Acessibilidade
 - ✅ `aria-label` e `sr-only` para melhor leitura em leitores de tela.
 - ✅ Navegação com teclado garantida.
-
-
 
 ## 📁 Estrutura de Pastas
 
 ```
-@@ -58,15 +50,13 @@ src/
+
+src/
+│
+├── lib/
+│   ├── components/
+│   │   ├── Header.svelte
+│   │   └── Footer.svelte
+│   └── utils/
+│       └── debounce.ts
+│
+├── routes/
+│   ├── +page.svelte        ← Página principal
+│   └── +page.ts            ← Função load com fetch da API
+│
+├── styles/
+│   └── global.css
+│
+└── app.d.ts                ← Tipagens globais Svelte
 
 ````
-
-
 
 ## 🧪 Como Rodar Localmente
 
@@ -43,11 +59,18 @@ cd ageGuesser
 ````
 
 ### 2. Instale as dependências
-@@ -83,29 +73,19 @@ npm run dev
+
+```bash
+npm install
+```
+
+### 3. Rode o projeto localmente
+
+```bash
+npm run dev
+```
 
 > Acesse em: [http://localhost:5173/](http://localhost:5173/)
-
-
 
 ## 🧰 Tecnologias Utilizadas
 
@@ -56,16 +79,10 @@ cd ageGuesser
 * [Agify API](https://agify.io)
 * HTML5, CSS3, A11y
 
-
-
 ## 🧑‍💻 Autor
 
 Desenvolvido por [Jessica Diniz](https://github.com/jessicadinizz) para fins de aprendizado e demonstração técnica.
 
-
-
 ## 📄 Licença
 
 Este projeto está sob a licença MIT.
-
-
